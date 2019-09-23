@@ -72,15 +72,8 @@ class Blogcomment(db.Model):
     def __repr__(self):
         return f"Blog('{self.date_posted}')"
 
-class Quote:
-    """
-    Quote class defines Quote objects
-    """
-
-    def __init__(self,author,title,description,article_url,image_url,date_created):
-        self.author = author
-        self.title = title
-        self.description = description
-        self.article_url = article_url
-        self.image_url = image_url
-        self.date_created = date_created  
+class Quotes:
+  def __init__ (self,author,quote,permalink):
+    self.author = author
+    self.quote = quote
+    self.permalink = permalink
