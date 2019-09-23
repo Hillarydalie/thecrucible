@@ -13,9 +13,9 @@
 
 ## Screenshot
 
-![A screenshot of the app sign in page](https://postimg.cc/7fq6Tt7t "Sign In Page")
-![A screenshot of the app sign up page](https://postimg.cc/yknNhhy1 "Sign Up Page")
-![A screenshot of the app landing page.](https://postimg.cc/Bj6nm8mx "Landing Page")
+![A screenshot of the app sign in page](http://oegkenya.ckadvocates.co.ke/images/signin.png "Sign In Page")
+![A screenshot of the app sign up page](http://oegkenya.ckadvocates.co.ke/images/register.png "Sign Up Page")
+![A screenshot of the app landing page.](http://oegkenya.ckadvocates.co.ke/images/home.png "Landing Page")
 
 
 
