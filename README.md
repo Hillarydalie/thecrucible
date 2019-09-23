@@ -13,9 +13,9 @@
 
 ## Screenshot
 
-![A screenshot of the app sign in page](https://drive.google.com/file/d/15Hw6pcD5IXiZlE8ora56qw8CDwMH4_GL/view?usp=sharing "Sign In Page")
-![A screenshot of the app sign up page](https://drive.google.com/file/d/1nbAC-ahPxNHOdXpUQfgqn1rRMkKFkhy1/view?usp=sharing "Sign Up Page")
-![A screenshot of the app landing page.](https://drive.google.com/file/d/1GGt3qod6akbwFCmm4eLFk8SWPiniX6Ie/view?usp=sharing "Landing Page")
+![A screenshot of the app sign in page](https://postimg.cc/7fq6Tt7t "Sign In Page")
+![A screenshot of the app sign up page](https://postimg.cc/yknNhhy1 "Sign Up Page")
+![A screenshot of the app landing page.](https://postimg.cc/Bj6nm8mx "Landing Page")
 
 
 
