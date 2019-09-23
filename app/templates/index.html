@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">The Crucible Project</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link" href="/newblog">New Blog</a>
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/login">Profile</a>
+                <a class="nav-item nav-link" href="/logout">Logout</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Insert Quote section here -->
+<div class="jumbotron">
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+</div>
+<!-- End of quote section -->
+
+<div class="row" id="pallete">
+    {% for blog in blogs %}
+    <div  class="col-md-4">
+        <div class="card border-dark mb-3" style="height:18rem">
+            <div class="card-header text-center">
+                <h3>{{blog.title}}</h3>
+            </div>
+            <div class="card-body text-dark">
+                <p class="card-text" id="blogcontent">
+                    {{blog.description | truncate(150)}}
+                </p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="card-text text-left" id="blogauthor">{{blog.author}}</p>
+                    </div>
+                    <div class="col-mmd-6" id="readmore">
+                        <a href="/blog/details/{{blog.id}}">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
