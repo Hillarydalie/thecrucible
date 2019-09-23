@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Chilanka|Dancing+Script|Kalam|Mansalva|Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway&display=swap');
+
+/*
+font-family: 'Chilanka', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+body {
+    overflow-x: none;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*Pad read more button right*/
+div#readmore {
+    padding-left: 20%;
+}
