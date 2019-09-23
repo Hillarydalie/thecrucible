@@ -1,0 +1,10 @@
+{%macro showQuotes(quote_request)%}
+    {%for quote in quote_request %} 
+        <p>
+            {{quotes.quote}}
+        </p>
+        <p>
+            {{quotes.author}}
+        </p>
+    {%endfor%}
+{%endmacro%}
