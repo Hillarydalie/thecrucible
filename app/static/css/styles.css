@@ -18,7 +18,66 @@ p {
     font-family: 'Quicksand', sans-serif;
 }
 
+h3,a {
+  font-family: 'Raleway', sans-serif;
+}
+
 /*Pad read more button right*/
 div#readmore {
     padding-left: 20%;
+}
+
+div#topintro {
+    background-color: black;
+    color: brown;
+    font-size: smaller;
+}
+
+div#topintro p {
+  font-family: 'Kalam', cursive;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.card.border-dark.mb-3:hover {
+    color: #ffffff;
+    background-color: #44443e8f;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 30%;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signup {
+  width: 100%;
+  max-width: 50%;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
