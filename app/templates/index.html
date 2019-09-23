@@ -11,19 +11,26 @@
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="/login">Profile</a>
-                <a class="nav-item nav-link" href="/logout">Logout</a>
+                <a class="nav-item nav-link" href="/profile">Profile</a>
+                <a class="nav-item nav-link" href="/">Logout</a>
             </div>
         </div>
     </div>
 </nav>
 
+<div class="jumbotron" id="topintro">
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">THE CRUCIBLE PROJECT</p>
+      <footer class="blockquote-footer">Feel the Heat, Face the Fire, Find the Gold</footer>
+    </blockquote>
+</div>
+
 
 <!-- Insert Quote section here -->
 <div class="jumbotron">
     <blockquote class="blockquote text-center">
-      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      <p class="mb-0">{{quote.quote}} </p>
+      <footer class="blockquote-footer"><cite title="Source Title"> {{quote.author}} </cite></footer>
     </blockquote>
 </div>
 <!-- End of quote section -->
@@ -47,7 +54,7 @@
                     </div>
                     <div class="col-mmd-6" id="readmore">
                         <a href="/blog/details/{{blog.id}}">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+                            <button type="button" class="btn btn-sm btn-outline-dark">Read More</button>
                         </a>
                     </div>
                 </div>

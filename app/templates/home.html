@@ -18,11 +18,49 @@
     </div>
 </nav>
 
+<div class="jumbotron" id="topintro">
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">THE CRUCIBLE PROJECT</p>
+      <footer class="blockquote-footer">Feel the Heat, Face the Fire, Find the Gold</footer>
+    </blockquote>
+</div>
+
 <!-- Insert Quote section here -->
-<blockquote class="blockquote text-center">
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-</blockquote>
+<div class="jumbotron">
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">{{quote.quote}} </p>
+      <footer class="blockquote-footer"><cite title="Source Title"> {{quote.author}} </cite></footer>
+    </blockquote>
+</div>
 <!-- End of quote section -->
+
+<div class="row" id="pallete">
+    {% for blog in blogs %}
+    <div  class="col-md-4">
+        <div class="card border-dark mb-3" style="height:18rem">
+            <div class="card-header text-center">
+                <h3>{{blog.title}}</h3>
+            </div>
+            <div class="card-body text-dark">
+                <p class="card-text" id="blogcontent">
+                    {{blog.description | truncate(150)}}
+                </p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="card-text text-left" id="blogauthor">{{blog.author}}</p>
+                    </div>
+                    <div class="col-mmd-6" id="readmore">
+                        <a href="/blog/details/{{blog.id}}">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 
 {% endblock %}
