@@ -2,6 +2,7 @@ from flask import render_template,request,redirect,url_for
 from flask_login import login_user,logout_user
 from . import auth
 from app.models import Author
+from app.requests import getQuotes
 
 @auth.route("/register", methods=["GET", "POST"])
 def registration():
@@ -55,10 +56,12 @@ def loginauthor():
             error = "User with that username does not exist"
             return render_template("login.html", error=error)
         login_user(author)
-        return render_template("index.html")
+        return redirect(url_for("main.homepage"))
     return render_template("login.html")
 
-@auth.route("/logout", methods=["GET", "POST"])
+@auth.route("/", methods=["GET", "POST"])
 def logout():
     logout_user()
-    return render_template("home.html")
+    quote = getQuotes()
+    another_quote = getQuotes()
+    return render_template(("home.html"), quote=quote, another_quote=another_quote)
